@@ -1,3 +1,16 @@
+
+<nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="https://getbootstrap.com/docs/4.1/components/navbar/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Bootstrap Navbar yeah! Here's the articles:
+      </a>
+        <form class="form-inline">
+
+        <%= link_to "+ new article", articles_new_path, method: :get%>
+      </form>
+</nav>
+
+
 <% @articles.each do |article| %>
 
 
