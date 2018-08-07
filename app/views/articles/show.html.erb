@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="https://getbootstrap.com/docs/4.1/components/navbar/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        <i class="fas fa-grin-alt"></i>
         Bootstrap Navbar yeah! Here's the articles:
       </a>
     </nav>
@@ -12,6 +12,10 @@
 <h2>Story:</h2>
 <%= @article.content %>
 
-<%= link_to 'Back', :back %>
 
-<%= link_to "edit", article_edit_url, method: :get%>
+
+<%= link_to article_edit_url, method: :get do%>
+<i class="far fa-edit"></i>
+<%end%>
+
+<%= link_to 'Back', :back %>
